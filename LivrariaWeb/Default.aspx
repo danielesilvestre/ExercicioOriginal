@@ -1,14 +1,26 @@
 ﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LivrariaWeb._Default" %>
 
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+
+    <script src ="Scripts/WebForms/Tela/Default.js" type ="text/javascript"></script>
+
+
+    
+    
 
     <div class="jumbotron">
         <h1>ASP.NET</h1>
         <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS, and JavaScript.</p>
+
+        <p>
+        <input type="text"  id="num1"  onblur ="calcular()"/> 
+        <input type ="text" id="num2"  onblur="calcular()"/>
+        <input type ="text" id="result" />
+          </p>
         <p><a href="http://www.asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a>
-            <asp:Button ID="idPesquisarHtml2" class="btn btn-primary" runat="server" Text="Teste" />
+            <Button id ="IdPesquisarHtml" class ="btn btn-primary" onclick ="pesquisaHtml()">Pesquisar</Button>
             <asp:Button ID="idPesquisarServer" class="btn btn-primary" runat="server" Text="Button" />
-            
         </p>
     </div>
 
@@ -42,5 +54,5 @@
             </p>
         </div>
     </div>
-
+    
 </asp:Content>

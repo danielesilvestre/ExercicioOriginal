@@ -13,5 +13,10 @@ namespace LivrariaWeb
         {
 
         }
+
+        protected void idPesquisarHtml2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
